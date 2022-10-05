@@ -10,8 +10,6 @@
       "EMAIL_FROM": "hello@nextjs-mongodb.now.sh",
       "WEB_URI": "https://esrdapp.herokuapp.com",
       "SESSION_SECRET": "keyboard cat",
-      "WEB_URI": "https://esrdapp.herokuapp.com",
-      "SESSION_SECRET": "keyboard cat",
       "USING_SECRETS": "Consider using Zeit Now Secrets instead.",
       "WALLET_ADDRESS": "0x597fe295943e68c35b8d66d311cbdccfe247a970"
     }
