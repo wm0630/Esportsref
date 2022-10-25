@@ -2,14 +2,11 @@ const app = require('express')()
 const server = require('http').Server(app)
 const io = require('socket.io')(server);
 const next = require('next');
-
 require('dotenv').config()
-
 const mongoose = require('mongoose');
 const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({ dev });
 const nextHandler = nextApp.getRequestHandler();
-
 const CONSTANTS = require('./consts');
 const { Schema } = mongoose;
 const chatHistorySchema = new Schema({
