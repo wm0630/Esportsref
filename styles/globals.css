@@ -9,13 +9,11 @@
 .Collapsible__trigger {
   @apply text-2xl font-bold text-yellow-400 cursor-pointer;
 }
-
 .the-copyboard-anchor {
   border-radius: 4px;
   padding: 9px !important;
   cursor: pointer;
 }
-
 @layer utilities {
   .PhoneInputCountryIconImg, .PhoneInputCountrySelectArrow {
     color: white;
@@ -63,7 +61,6 @@
     width: 60%;
   }
 }
-
 /*Input*/
 input:focus, textarea:focus, select:focus{
   outline: none;
