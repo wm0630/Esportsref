@@ -9,11 +9,8 @@ const mongoose = require('mongoose');
 const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({ dev });
 const nextHandler = nextApp.getRequestHandler();
-
 const CONSTANTS = require('./consts');
-
 const { Schema } = mongoose;
-
 const chatHistorySchema = new Schema({
   user: String,
   text: String,
