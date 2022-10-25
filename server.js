@@ -11,9 +11,7 @@ const nextApp = next({ dev });
 const nextHandler = nextApp.getRequestHandler();
 
 const CONSTANTS = require('./consts');
-
 const { Schema } = mongoose;
-
 const chatHistorySchema = new Schema({
   user: String,
   text: String,
@@ -23,10 +21,8 @@ const chatHistorySchema = new Schema({
 }, {
   timestamps: { currentTime: () => Math.floor(Date.now() / 1000) }
 });
-
 mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true});
 const ChatHistory = mongoose.model('ChatHistory', chatHistorySchema);
-
 // To manage participants
 let users = [];
 const addUser = ({ id, name, room }) => {
